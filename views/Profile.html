@@ -6,12 +6,50 @@
 </head>
 <body>
 <form action="#" method="post" class="form-horizontal">
-    <select class="form-control" name="color" id="color">
-        <option>--Select a color--</option>
-        <repeat group="{{ @colors }}" value="{{ @colorOption }}">
-            <option>{{ @colorOption }}</option>
-        </repeat>
-    </select>
+
+    <div class="form-group">
+        <label class="col-md-5 col-lg-8 control-label">Last Name</label>
+        <div class="inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fas fa-user-alt"></i></span>
+                <input id="lastName" name="lastName" placeholder="Last Name" class="form-control" value = "<?php echo $last?>" type="text">
+                <span  class="err" id="err-lname"><?php echo $lNameError ?></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-5 col-lg-8 control-label">Age</label>
+        <div class="inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fas fa-key"></i></span>
+                <input id="password" name="password" placeholder="Enter Age" class="form-control" type="number">
+                <span  class="err" id="err-Age"><?php echo $passwordError ?></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-5 col-lg-8 control-label">Gender</label>
+        <div class=" text-dark" >
+            <div class="radio" >
+                <label class="mr-3">
+                    <input type="radio" name="flight" value="M" id="flightYes"/> Male
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="flight" value="F" id="flightNo"/> Female
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <label class="form-control-label">
+        <br />Reason for contacting:<br />
+        <textarea class="form-control" id="comments" rows="5" name="comments"></textarea>
+    </label><br />
+
     <button class='btns' type='submit'><a href='order3'>What are your interests?</a></button>
 </form>
 </body>

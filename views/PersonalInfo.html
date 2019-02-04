@@ -5,12 +5,77 @@
     <title>Dating Site</title>
 </head>
 <body>
-<form action="#" method="post" class="form-horizontal">
-    <label>Animal
-        <input type="text" name="animal">
-    </label>
+<section  class="bg-primary cb-background-reg container" id="about">
+    <form class="container offset-lg-2  col-lg-8" method="post" id ='form' action="">
+        <div class="container-fluid form-group text-light p-4 cb-regInfo text-dark" >
+            <fieldset class="form-group" id="register">
+                <legend>Registration Information</legend>
+                <div class="form-group">
+                    <label class="col-md-5 col-lg-8 control-label">First Name</label>
+                    <div class="inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fas fa-user-alt"></i></span>
+                            <input id="firstName" name="firstName" placeholder="First Name" class="form-control" value = "<?php echo $first?>" type="text">
+                            <span  class="err" id="err-fname"><?php echo $fNameError ?></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-5 col-lg-8 control-label">Last Name</label>
+                    <div class="inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fas fa-user-alt"></i></span>
+                            <input id="lastName" name="lastName" placeholder="Last Name" class="form-control" value = "<?php echo $last?>" type="text">
+                            <span  class="err" id="err-lname"><?php echo $lNameError ?></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-5 col-lg-8 control-label">Age</label>
+                    <div class="inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fas fa-key"></i></span>
+                            <input id="password" name="password" placeholder="Enter Age" class="form-control" type="number">
+                            <span  class="err" id="err-Age"><?php echo $passwordError ?></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-5 col-lg-8 control-label">Gender</label>
+                    <div class=" text-dark" >
+                        <div class="radio" >
+                            <label class="mr-3">
+                                <input type="radio" name="flight" value="M" id="flightYes"/> Male
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="flight" value="F" id="flightNo"/> Female
+                            </label>
+                        </div>
+                </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-5 col-lg-8 control-label">Phone Number</label>
+                    <div class="inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="far fa-envelope"></i></span>
+                            <input  class="form-control mx-sm-2" type="text" name="phone" id="phone" size="20" required
+                                    pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" value="<?php echo $phone?>"/>
+                            <span  class="err" id="err-phone"><?php echo $emailError ?></span>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
     <br>
     <button class='btns' type='submit'><a href='order2'>Create a Profile!</a></button>
+        </div>
+    </form>
+</section>
 </form>
 </body>
 </html>
