@@ -5,6 +5,7 @@
  * Date: 1/14/2019
  * Time: 10:10 AM
  */
+session_start();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
@@ -21,24 +22,18 @@ $f3->set('DEBUG', 3);
 $f3->route('GET /', function() {
     $view = new View;
     echo $view->render('views/home.html');
-    echo "<button id='CreateProfile' class='btns' type='submit'><a href='order'>Create a Profile!</a></button>";
 });
 
 //Define a form1 route
-$f3->route('GET|POST /order', function($f3) {
+$f3->route('GET|POST /date', function($f3) {
     $_SESSION = array();
 
-    if(isset($_POST['animal']))
+    if(isset($_POST['membership']))
     {
-        $animal = $_POST['animal'];
-        if (validString($animal))
+        $Pmember = $_POST['membership'];
+        if (validString($Pmember))
         {
-            $_SESSION['animal'] = $animal;
-            $f3->reroute('order2');
-        }
-        else
-        {
-            $f3->set("errors['animal']", "Please enter an animal.");
+            $_SESSION['membership'] = $Pmember;
         }
     }
 
@@ -47,7 +42,7 @@ $f3->route('GET|POST /order', function($f3) {
 });
 
 //Define a form2 route
-$f3->route('GET|POST /order2', function($f3) {
+$f3->route('GET|POST /date2', function($f3) {
     $_SESSION['animal'] = $_POST['animal'];
 
     if(isset($_POST['color']))
@@ -69,7 +64,7 @@ $f3->route('GET|POST /order2', function($f3) {
 });
 
 //Define a form2 route
-$f3->route('GET|POST /order3', function($f3) {
+$f3->route('GET|POST /date3', function($f3) {
     $_SESSION['animal'] = $_POST['animal'];
 
     if(isset($_POST['color']))
@@ -91,7 +86,7 @@ $f3->route('GET|POST /order3', function($f3) {
 });
 
 //Define a form2 route
-$f3->route('GET|POST /order3', function($f3) {
+$f3->route('GET|POST /date4', function($f3) {
     $_SESSION['animal'] = $_POST['animal'];
 
     if(isset($_POST['color']))
