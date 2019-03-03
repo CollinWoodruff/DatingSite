@@ -3,117 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <title>Dating Site</title>
+    <link rel="stylesheet"  type="text/css" href="../styles/styles.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet"
           href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 </head>
 <body>
-<form action="#" method="post" class="form-horizontal">
-
-    <fieldset>
-        <legend>Your interests</legend>
-        <label>
-            <input type="checkbox" value="pepperoni"
-                   name="toppings[]">&nbsp;Pepperoni
-        </label>
-        <label>
-            <input type="checkbox" value="mushroom"
-                   name="toppings[]">&nbsp;Mushroom
-        </label>
-        <label>
-            <input type="checkbox" value="Italian Sausage"
-                   name="toppings[]">&nbsp;Italian Sausage
-        </label>
-        <label>
-            <input type="checkbox" value="Canadian Bacon"
-                   name="toppings[]">&nbsp;Canadian Bacon
-        </label>
-        <label>
-            <input type="checkbox" value="pepperoni"
-                   name="toppings[]">&nbsp;Pepperoni
-        </label>
-        <label>
-            <input type="checkbox" value="mushroom"
-                   name="toppings[]">&nbsp;Mushroom
-        </label>
-        <label>
-            <input type="checkbox" value="Italian Sausage"
-                   name="toppings[]">&nbsp;Italian Sausage
-        </label><br>
-        <label>
-            <input type="checkbox" value="Canadian Bacon"
-                   name="toppings[]">&nbsp;Canadian Bacon
-        </label>
-        <label>
-            <input type="checkbox" value="pepperoni"
-                   name="toppings[]">&nbsp;Pepperoni
-        </label>
-        <label>
-            <input type="checkbox" value="mushroom"
-                   name="toppings[]">&nbsp;Mushroom
-        </label>
-        <label>
-            <input type="checkbox" value="Italian Sausage"
-                   name="toppings[]">&nbsp;Italian Sausage
-        </label>
-        <label>
-            <input type="checkbox" value="Canadian Bacon"
-                   name="toppings[]">&nbsp;Canadian Bacon
-        </label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Seeking</legend>
-        <label>
-            <input type="checkbox" value="pepperoni"
-                   name="toppings[]">&nbsp;Pepperoni
-        </label>
-        <label>
-            <input type="checkbox" value="mushroom"
-                   name="toppings[]">&nbsp;Mushroom
-        </label>
-        <label>
-            <input type="checkbox" value="Italian Sausage"
-                   name="toppings[]">&nbsp;Italian Sausage
-        </label>
-        <label>
-            <input type="checkbox" value="Canadian Bacon"
-                   name="toppings[]">&nbsp;Canadian Bacon
-        </label>
-        <label>
-            <input type="checkbox" value="pepperoni"
-                   name="toppings[]">&nbsp;Pepperoni
-        </label>
-        <label>
-            <input type="checkbox" value="mushroom"
-                   name="toppings[]">&nbsp;Mushroom
-        </label>
-        <label>
-            <input type="checkbox" value="Italian Sausage"
-                   name="toppings[]">&nbsp;Italian Sausage
-        </label><br>
-        <label>
-            <input type="checkbox" value="Canadian Bacon"
-                   name="toppings[]">&nbsp;Canadian Bacon
-        </label>
-        <label>
-            <input type="checkbox" value="pepperoni"
-                   name="toppings[]">&nbsp;Pepperoni
-        </label>
-        <label>
-            <input type="checkbox" value="mushroom"
-                   name="toppings[]">&nbsp;Mushroom
-        </label>
-        <label>
-            <input type="checkbox" value="Italian Sausage"
-                   name="toppings[]">&nbsp;Italian Sausage
-        </label>
-        <label>
-            <input type="checkbox" value="Canadian Bacon"
-                   name="toppings[]">&nbsp;Canadian Bacon
-        </label>
-    </fieldset>
+<div class="container-fluid checkboxes">
+    <form action="#" method="post" class="form-horizontal border-dark">
+    <h1 class="text-primary">Interests</h1>
+    <hr>
+        <fieldset class="border-dark">
+    <div class="column">
+            <legend>In-door interests</legend>
+            <label>
+                <input type="checkbox" value="pepperoni"
+                       name="toppings[]">&nbsp;T.V
+            </label>
+            <label>
+                <input type="checkbox" value="mushroom"
+                       name="toppings[]">&nbsp;Movies
+            </label>
+            <label>
+                <input type="checkbox" value="Italian Sausage"
+                       name="toppings[]">&nbsp;Cooking
+            </label>
+            <label>
+                <input type="checkbox" value="Canadian Bacon"
+                       name="toppings[]">&nbsp;Puzzles
+            </label><br>
+            <label>
+                <input type="checkbox" value="pepperoni"
+                       name="toppings[]">&nbsp;Reading
+            </label>
+            <label>
+                <input type="checkbox" value="mushroom"
+                       name="toppings[]">&nbsp;Playing Cards
+            </label>
+            <label>
+                <input type="checkbox" value="Italian Sausage"
+                       name="toppings[]">&nbsp;Video Games
+            </label>
+        <br>
+    </div>
+    <div class="column">
+            <legend>Out-door Interests</legend>
+            <label>
+                <input type="checkbox" value="pepperoni"
+                       name="toppings[]">&nbsp;Hiking
+            </label>
+            <label>
+                <input type="checkbox" value="mushroom"
+                       name="toppings[]">&nbsp;Biking
+            </label>
+            <label>
+                <input type="checkbox" value="Italian Sausage"
+                       name="toppings[]">&nbsp;Swimming
+            </label><br>
+            <label>
+                <input type="checkbox" value="Canadian Bacon"
+                       name="toppings[]">&nbsp;Collecting
+            </label>
+            <label>
+                <input type="checkbox" value="pepperoni"
+                       name="toppings[]">&nbsp;Walking
+            </label>
+            <label>
+                <input type="checkbox" value="mushroom"
+                       name="toppings[]"> Climbing
+            </label>
+        <br>
+    </div>
+        </fieldset>
     <button class='btns' type='submit'><a href='date4'>Go check out your profile!</a></button>
-</form>
+    </form>
+</div>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

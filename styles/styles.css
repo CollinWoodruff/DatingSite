@@ -27,7 +27,6 @@ body {
 h1 {
     padding: 10px;
     border: 25px #000000;
-    font-size: 48px;
     text-align: center;
     width: 98%;
 }
@@ -72,4 +71,16 @@ button:hover {
     visibility: hidden;
     color: darkred;
     padding-left: 1.3em;
+}
+
+.checkboxes {
+    text-align:center;
+}
+
+.checkboxes input{
+    margin: 0px 0px 0px 0px;
+}
+
+.checkboxes label{
+    margin: 0px 20px 0px 3px;
 }
